@@ -1,0 +1,11 @@
+{
+  "status": "released",
+  "channel": "test",
+  "version": "1.0.0-test.5",
+  "apkUrl": "downloads/paizhaodazi-1.0.0-test.5.apk",
+  "filename": "paizhaodazi-1.0.0-test.5.apk",
+  "sizeBytes": 12159696,
+  "sha256": "afc8fc829cfbd781d87d457438ef857ed23c3fb0334a95d2a04482425a26872b",
+  "minAndroid": "10",
+  "releaseDate": "2026-10-13"
+}
