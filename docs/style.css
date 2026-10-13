@@ -16,6 +16,7 @@ dialog{border:1px solid #fff;border-radius:26px;padding:32px;width:min(540px,cal
 
 /* The supplied wordmark is displayed intact; blending fades its paper into the sky. */
 .intro{z-index:auto}
+.selected-wordmark{filter:brightness(1.12)}
 .title-lockup{width:440px;max-width:100%;margin-left:-25px}.intro h1{font-size:0;line-height:0;letter-spacing:0;transform:none}.selected-wordmark{display:block;width:100%;height:auto;mix-blend-mode:multiply;mask-image:linear-gradient(to bottom,transparent,#000 5%,#000 94%,transparent),linear-gradient(to right,transparent,#000 5%,#000 95%,transparent);mask-composite:intersect;-webkit-mask-image:linear-gradient(to bottom,transparent,#000 5%,#000 94%,transparent),linear-gradient(to right,transparent,#000 5%,#000 95%,transparent);-webkit-mask-composite:source-in}
 @media(max-width:1050px) and (min-width:701px){.title-lockup{width:360px;margin-left:-15px}}
 @media(max-width:700px){.title-lockup{width:100%;max-width:385px;margin-left:0}.intro h1{font-size:0;line-height:0;transform:none}.slogan{margin-top:12px}.eyebrow{margin-bottom:12px}}
