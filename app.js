@@ -1,4 +1,8 @@
 'use strict';
+const primaryDownload=document.querySelector('.intro .download-area'),hero=document.querySelector('.hero');
+const mobileLayout=matchMedia('(max-width:700px)');
+function placeDownload(){if(mobileLayout.matches)hero.append(primaryDownload);else document.querySelector('.intro').insertBefore(primaryDownload,document.querySelector('.hero-note'));}
+placeDownload();mobileLayout.addEventListener('change',placeDownload);
 const screenDefinitions=[['assets/camera.png','拍摄辅助原型页面'],['assets/library.png','姿势库原型页面'],['assets/edit.png','拍后调整原型页面']];
 document.querySelectorAll('[data-screen]').forEach(button=>button.addEventListener('click',()=>{const index=Number(button.dataset.screen),img=document.getElementById('phone-screen');img.src=screenDefinitions[index][0];img.alt=screenDefinitions[index][1];document.querySelectorAll('[data-screen]').forEach(b=>{const active=b===button;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))})}));
 document.querySelectorAll('[data-dialog]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('dialog[open]').forEach(d=>d.close());document.getElementById(button.dataset.dialog).showModal()}));
